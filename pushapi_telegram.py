@@ -140,14 +140,6 @@ async def send_telegram_message(param_dict, image_path=None):
 
 if __name__ == '__main__':
     asyncio.run(send_telegram_message(param_dict, open(fname,"rb")))
-    
-#custom
-#disp_param_dict['token']='tokenforurl'
-#disp_param_dict['chat_id']='chat_idforurl'
-#param_dict['title']='titleforurl'
-#param_dict['message']='messageforurl'
-#open(fname,"rb")='photoforurl'
-#telegram_msg_url = f'https://api.telegram.org/bot{tokenforurl}/sendPhoto?chat_id={chat_idforurl}&caption={messageforurl}&photo={photoforurl}'
-#response = requests.get(telegram_msg_url)
+
 zmlog.Debug(1,"eid:{} Telegram returned:{}".format(eid,disp_param_dict,files))
 zmlog.close()
